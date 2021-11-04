@@ -1,0 +1,12 @@
+<mat-toolbar color = "success" class = "mat-elevation-z8">
+  <span><mat-icon>Afya</mat-icon>AfyaBora</span>
+
+  <div class = "spacer"></div>
+  
+  <div fxLayout="row" fxShow="true" fxShow.gt-sm >
+  <a mat-button  routerLink="/appointment">Appointments</a>
+  <a mat-button  routerLink="/signup">Signup</a>
+  <a mat-raised-button color = "primary"  routerLink="/login">Login</a> 
+  </div>
+</mat-toolbar>
+<router-outlet></router-outlet>
