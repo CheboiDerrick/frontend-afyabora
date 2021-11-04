@@ -19,12 +19,17 @@ import { EditeventComponent } from './editevent/editevent.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+
 import { RegisteruserService } from './registeruser.service';
 import { FullCalendarModule } from '@fullcalendar/angular'; // the main connector. must go first
 import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin
 import interactionPlugin from '@fullcalendar/interaction'; // a plugin
 
 import { FormsModule } from '@angular/forms';
+import { VideocallComponent } from './videocall/videocall.component';
+import { environment } from 'src/environments/environment';
+import { NgxAgoraModule } from 'ngx-agora';
+
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -40,7 +45,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     AppointmentComponent,
     AddeventComponent,
     HomeComponent,
-    EditeventComponent
+    EditeventComponent,
+    VideocallComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +60,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     FullCalendarModule,
     FormsModule,
     NgbModule,
+    NgxAgoraModule.forRoot({ AppID: environment.agora.appId }),
   ],
   providers: [],
   bootstrap: [AppComponent]

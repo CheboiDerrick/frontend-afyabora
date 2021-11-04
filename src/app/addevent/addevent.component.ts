@@ -17,10 +17,10 @@ export class AddeventComponent implements OnInit {
     did: '',
     date: ''
      };
-  url = "http://127.0.0.1:8000/eventsmanager/addevent/";
+  url = "https://afyabackendapi.herokuapp.com/eventsmanager/addevent/";
 
 
-  url2 = "http://127.0.0.1:8000/signupmanager/viewdoctors/"
+  url2 = "https://afyabackendapi.herokuapp.com/signupmanager/viewdoctors/"
 
   json2 = {};
   json;

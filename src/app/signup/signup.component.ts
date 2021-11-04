@@ -16,7 +16,7 @@ export class SignupComponent implements OnInit {
     utype: '',
     password: ''
      };
-   url = "http://127.0.0.1:8000/signupmanager/insertuser/";
+   url = "https://afyabackendapi.herokuapp.com/signupmanager/insertuser/";
    json;
    constructor(private http: HttpClient, private router:Router) {
      }

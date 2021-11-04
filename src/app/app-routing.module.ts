@@ -6,6 +6,7 @@ import { AppointmentComponent } from './appointment/appointment.component';
 import { AddeventComponent } from './addevent/addevent.component';
 import { EditeventComponent } from './editevent/editevent.component';
 import { HomeComponent } from './components/home/home.component';
+import { VideocallComponent } from './videocall/videocall.component';
 
 const routes: Routes = [
   { path: 'login', component:LoginComponent  },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'addevent', component:AddeventComponent },
   { path: 'appointment', component:AppointmentComponent  },
   { path: 'editevent', component: EditeventComponent },
-  { path: 'components/home', component: HomeComponent},
+  {path: 'live', component: VideocallComponent},
+  { path: '', component: HomeComponent},
 ];
 
 @NgModule({
