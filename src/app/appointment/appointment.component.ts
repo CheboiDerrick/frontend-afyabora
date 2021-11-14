@@ -26,7 +26,7 @@ export class AppointmentComponent implements OnInit {
   }
 
 
-  urle ="http://127.0.0.1:8000/eventsmanager/events/";
+  urle ="https://afyabackendapi.herokuapp.com/eventsmanager/events/";
   constructor(private router:Router, private http: HttpClient) { }
 
   ngOnInit(){

@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit{
     email: '',
     password: ''
      };
-   url = "http://127.0.0.1:8000/signupmanager/viewuser/";
+   url = "https://afyabackendapi.herokuapp.com/signupmanager/viewuser/";
 
     json;
 
